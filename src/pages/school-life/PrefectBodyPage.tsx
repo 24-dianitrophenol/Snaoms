@@ -161,20 +161,6 @@ const PrefectBodyPage = () => {
                     </h3>
                     <p className="text-accent-600 font-medium mb-2">{prefect.position}</p>
                     <p className="text-gray-600 mb-4">{prefect.class}</p>
-                    <div className="space-y-2 mb-4">
-                      <div className="flex items-center text-gray-600">
-                        <Mail size={16} className="mr-2" />
-                        <a href={`mailto:${prefect.email}`} className="hover:text-primary-600">
-                          {prefect.email}
-                        </a>
-                      </div>
-                      <div className="flex items-center text-gray-600">
-                        <Phone size={16} className="mr-2" />
-                        <a href={`tel:${prefect.phone}`} className="hover:text-primary-600">
-                          {prefect.phone}
-                        </a>
-                      </div>
-                    </div>
                     <h4 className="font-semibold text-gray-700 mb-2">Responsibilities:</h4>
                     <ul className="space-y-1">
                       {prefect.responsibilities.map((resp, respIndex) => (

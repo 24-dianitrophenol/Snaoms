@@ -53,10 +53,12 @@ const HistoryPage = () => {
           <div className="flex flex-col gap-12">
             {/* Who is Noa Mawaggali? */}
             <div className="flex flex-col md:flex-row items-center gap-6">
-              <img src="images/noa.jpg" alt="Noa Mawaggali" className="w-32 h-32 object-cover rounded-xl shadow-md mb-4 md:mb-0" />
-              <div>
-                <h3 className="font-bold text-accent-400 mb-2 text-xl md:text-2xl">Who is Noa Mawaggali?</h3>
-                <p className="text-gray-700 text-sm leading-relaxed">
+              <div className="w-full md:w-1/2 order-1 md:order-1">
+                <img src="images/noa.jpg" alt="Noa Mawaggali" className="w-full h-64 object-cover rounded-xl shadow-md mb-4 md:mb-0" />
+              </div>
+              <div className="w-full md:w-1/2 order-2 md:order-2 flex flex-col justify-center">
+                <h3 className="font-bold text-primary-600 mb-2 text-xl md:text-2xl text-center md:text-right">Who is Noa Mawaggali?</h3>
+                <p className="text-gray-700 text-sm leading-relaxed text-justify">
                   He was born at kasibukulu in Singo county around 1851. When he grew up, he took up services of Mukomera. Mawaggali was a son of Musaani and member of Bush-bwek (Ngabi) clan. His mother's name was Nansere. He was an expert potter and was appointed by the County chief who greatly admired his work.<br/>
                   After living for a time in the chief's household, Mawaggali became a tenant of Mathias Mulumba Kalemba and built a house on his land. Mulumba was his friend, as well as his landlord, and it was this friendship, as well as the zeal and Christian example of Mathias Mulumba which drew Mawaggali to him and which induced him to join the Catholic Catechumenes.<br/>
                   When he became a Christian he put all his confidence in God. He was baptised on Sunday 31st November, 1885.<br/>
@@ -69,10 +71,12 @@ const HistoryPage = () => {
             </div>
             {/* Background of the School */}
             <div className="flex flex-col md:flex-row items-center gap-6">
-              <img src="images/school.jpg" alt="School" className="w-32 h-32 object-cover rounded-xl shadow-md mb-4 md:mb-0" />
-              <div>
-                <h3 className="font-bold text-accent-400 mb-2 text-xl md:text-2xl">Background of the School</h3>
-                <p className="text-gray-700 text-sm leading-relaxed">
+              <div className="w-full md:w-1/2 order-1 md:order-1">
+                <img src="images/school.jpg" alt="School" className="w-full h-64 object-cover rounded-xl shadow-md mb-4 md:mb-0" />
+              </div>
+              <div className="w-full md:w-1/2 order-2 md:order-2 flex flex-col justify-center">
+                <h3 className="font-bold text-primary-600 mb-2 text-xl md:text-2xl text-center md:text-right">Background of the School</h3>
+                <p className="text-gray-700 text-sm leading-relaxed text-justify">
                   St. Noa Mawaggali Senior Secondary School Mbikko is a private catholic founded mixed day and boarding school with O and A levels of education. It is located on the main Kampala-Jinja highway road in Njeru town council, Njeru Municipality.<br/>
                   The school was founded in 1993 by the Christians of Njeru-Nile sub-parish in Mbikko parish with the help of Mill Hill missionaries who run the Mbikko parish. It was founded with the aim of enhancing spiritual, moral, intellectual growth and social growth and development as well as uniting the community of the area.<br/>
                   Although it is a catholic founded school, its embraces all the religious practices without exclusion of other denominations for example Moslems, Hindus, Anglicans and Pentecostals all find the school accommodating and very receptive.<br/>
@@ -82,7 +86,7 @@ const HistoryPage = () => {
               </div>
             </div>
             {/* Cards: Motto, Mission, Core Values, Vision */}
-            <div className="flex flex-col gap-6 mt-8">
+            <div className="flex flex-col md:flex-row gap-6 mt-8">
               {cardData.map((card, idx) => (
                 <motion.div
                   key={card.title}
@@ -91,21 +95,18 @@ const HistoryPage = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: idx * 0.1 }}
-                  className="rounded-2xl bg-white border border-accent-400 shadow-lg p-6 flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-6 cursor-pointer transition-all duration-300"
+                  className="flex-1 rounded-2xl bg-primary-600 border border-accent-400 shadow-lg p-6 flex flex-col items-center text-center gap-4 cursor-pointer transition-all duration-300"
                 >
-                  <img src={card.icon} alt={card.title} className="w-20 h-20 object-cover rounded-xl shadow-md mb-4 md:mb-0" />
-                  <div className="flex-1">
-                    <h4 className="font-bold text-accent-400 text-xl mb-2 font-display">{card.title}</h4>
-                    {Array.isArray(card.content) ? (
-                      <ul className="list-none space-y-1 text-gray-700 font-mono text-base">
-                        {card.content.map((val, i) => (
-                          <li key={i}>{val}</li>
-                        ))}
-                      </ul>
-                    ) : (
-                      <p className="text-gray-700 font-mono text-base">{card.content}</p>
-                    )}
-                  </div>
+                  <h4 className="font-bold text-accent-400 text-xl mb-2 font-display">{card.title}</h4>
+                  {Array.isArray(card.content) ? (
+                    <ul className="list-none space-y-1 text-white text-base">
+                      {card.content.map((val, i) => (
+                        <li key={i}>{val}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-white text-base">{card.content}</p>
+                  )}
                 </motion.div>
               ))}
             </div>

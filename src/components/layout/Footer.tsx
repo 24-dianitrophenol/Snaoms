@@ -10,8 +10,8 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* School Info */}
-          <div>
-            <div className="flex items-center space-x-2 mb-4">
+          <div className="text-center md:text-left flex flex-col items-center md:items-start">
+            <div className="flex items-center justify-center md:justify-start space-x-2 mb-4">
               <div className="bg-white p-2 rounded-full shadow flex items-center justify-center w-14 h-14">
                 <img src="images/logo.png" alt="School Logo" className="w-10 h-10 object-contain" />
               </div>
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
             <p className="mb-4 text-sm leading-relaxed text-gray-200">
             The school was founded in 1993 by the Christians of Njeru-Nile sub-parish in Mbikko parish with the help of Mil Hill missionaries who run the Mbikko parish. It was founded with the aim of enhancing spiritual, moral, intellectual growth and social growth and development as well as uniting the community of the area.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex justify-center md:justify-start space-x-4">
               <a 
                 href="https://facebook.com" 
                 target="_blank" 
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="font-bold text-lg mb-4 text-accent-400">Quick Links</h3>
             <ul className="space-y-2">
               <li>
@@ -98,18 +98,18 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Contact Info */}
-          <div>
-            <h3 className="font-bold text-lg mb-4 text-accent-400">Contact Us</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start">
+          <div className="text-center md:text-left">
+            <h3 className="font-bold text-lg mb-4 text-accent-400 text-center md:text-left">Contact Us</h3>
+            <ul className="space-y-3 flex flex-col items-center md:items-start">
+              <li className="flex items-start justify-center md:justify-start">
                 <MapPin size={18} className="mr-2 mt-1 flex-shrink-0" />
                 <span>Mbikko Parish, Njeru-Buikwe District, Uganda</span>
               </li>
-              <li className="flex items-center">
+              <li className="flex items-center justify-center md:justify-start">
                 <Phone size={18} className="mr-2 flex-shrink-0" />
                 <span>+256 123 456 789</span>
               </li>
-              <li className="flex items-center">
+              <li className="flex items-center justify-center md:justify-start">
                 <Mail size={18} className="mr-2 flex-shrink-0" />
                 <span>info@stnoamawagali.edu</span>
               </li>
@@ -117,7 +117,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Newsletter */}
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="font-bold text-lg mb-4 text-accent-400">Newsletter</h3>
             <p className="mb-3 text-sm">Subscribe to our newsletter for updates on school events and news.</p>
             <form className="space-y-2">
@@ -139,7 +139,7 @@ const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/20 mt-10 pt-6 text-center text-sm text-gray-300">
           <p>&copy; {currentYear} St. Noa Mawagali S.S.S. All rights reserved.</p>
-          <div className="mt-2 space-x-4">
+          <div className="mt-2 space-x-4 flex flex-col sm:flex-row justify-center items-center">
             <Link to="/privacy" className="hover:text-accent-300 transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-accent-300 transition-colors">Terms of Use</Link>
           </div>

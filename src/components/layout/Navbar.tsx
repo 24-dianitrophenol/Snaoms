@@ -217,9 +217,10 @@ const Navbar: React.FC = () => {
         <span className="bg-green-600 text-white px-3 py-1 rounded font-bold"># Top Tags</span>
         <span className="bg-green-50 text-green-700 px-3 py-1 rounded">Games and Sports</span>
         <span className="bg-green-50 text-green-700 px-3 py-1 rounded">Admissions</span>
+        <span className="bg-green-50 text-green-700 px-3 py-1 rounded">Academics</span>
         <span className="bg-green-50 text-green-700 px-3 py-1 rounded">History</span>
         <span className="bg-green-50 text-green-700 px-3 py-1 rounded">Beliefs</span>
-        <span className="bg-green-50 text-green-700 px-3 py-1 rounded">Brief of BSS</span>
+        <span className="bg-green-50 text-green-700 px-3 py-1 rounded">Brief of Snoams</span>
         <span className="bg-green-50 text-green-700 px-3 py-1 rounded">Education Investment</span>
         <span className="bg-green-50 text-green-700 px-3 py-1 rounded">Education</span>
       </div>
@@ -238,11 +239,8 @@ const Navbar: React.FC = () => {
             {/* Logo for mobile */}
             <div className="lg:hidden flex items-center">
               <Link to="/" className="flex items-center space-x-2">
-                <div className="w-10 h-10 bg-primary-600 text-white flex items-center justify-center rounded">
-                  <Graduation />
-                </div>
                 <div className="font-display font-bold text-xl text-white">
-                  St. Noa Mawagali
+                  Snoams Menu
                 </div>
               </Link>
             </div>
