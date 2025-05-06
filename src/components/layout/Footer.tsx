@@ -107,11 +107,15 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center justify-center md:justify-start">
                 <Phone size={18} className="mr-2 flex-shrink-0" />
-                <span>+256 123 456 789</span>
+                <span>+256-772-658134</span>
+              </li>
+              <li className="flex items-center justify-center md:justify-start">
+                <Phone size={18} className="mr-2 flex-shrink-0" />
+                <span>+256-756-800003</span>
               </li>
               <li className="flex items-center justify-center md:justify-start">
                 <Mail size={18} className="mr-2 flex-shrink-0" />
-                <span>info@stnoamawagali.edu</span>
+                <span>st.noamawaggaliss@gmail.com</span>
               </li>
             </ul>
           </div>
