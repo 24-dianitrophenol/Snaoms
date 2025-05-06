@@ -81,7 +81,7 @@ const CareersPage = () => {
       <PageHeader 
         title="Career Opportunities" 
         subtitle="Join Our Team of Dedicated Educators"
-        backgroundImage="https://images.pexels.com/photos/5905905/pexels-photo-5905905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage="https://images.cs=tinysrgb&w=1260&h=750&dpr=2"
       />
 
       <section className="py-16">

@@ -8,31 +8,31 @@ const DepartmentsPage = () => {
   const departments = [
     {
       name: 'Sciences Department',
-      head: 'Dr. Robert Kato',
+      head: 'Mr. Nakaswa Milton',
       subjects: ['Biology', 'Chemistry', 'Physics'],
       description: 'Our Science Department is equipped with modern laboratories and experienced teachers who make learning practical and engaging.',
-      image: 'https://images.pexels.com/photos/8926548/pexels-photo-8926548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.com/photos/892750&dpr=2',
     },
     {
       name: 'Mathematics Department',
-      head: 'Mr. Peter Wasswa',
+      head: 'Mr. Kakaire Musa',
       subjects: ['Mathematics', 'Additional Mathematics', 'Statistics'],
       description: 'The Mathematics Department focuses on developing strong analytical and problem-solving skills in students.',
-      image: 'https://images.pexels.com/photos/5905442/pexels-photo-5905442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.com/photos/5905442/pexels-photo-dpr=2',
     },
     {
       name: 'Languages Department',
-      head: 'Mrs. Grace Nabatanzi',
+      head: 'Ms. Joan',
       subjects: ['English Language', 'Literature in English', 'Local Languages'],
       description: 'Our Language Department nurtures effective communication skills and appreciation for literature.',
-      image: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.com/photos/5212345/pex1260&h=750&dpr=2',
     },
     {
       name: 'Humanities Department',
-      head: 'Ms. Janet Namuli',
+      head: 'Mr. Tandru Pasi',
       subjects: ['History', 'Geography', 'Religious Education'],
       description: 'The Humanities Department helps students understand society, culture, and human development.',
-      image: 'https://images.pexels.com/photos/5212326/pexels-photo-5212326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.p?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     },
   ];
 
@@ -69,7 +69,7 @@ const DepartmentsPage = () => {
       <PageHeader 
         title="Academic Departments" 
         subtitle="Excellence Through Specialized Learning"
-        backgroundImage="https://images.pexels.com/photos/5905442/pexels-photo-5905442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage="https://images.pexels.com/photosress&cs=tinysrgb&w=1260&h=750&dpr=2"
       />
 
       <section className="py-16">

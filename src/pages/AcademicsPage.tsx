@@ -12,7 +12,8 @@ const AcademicsPage = () => {
     >
       <PageHeader 
         title="Academics" 
-        description="Excellence in Education"
+        subtitle="Excellence in Education"
+        backgroundImage="https://isrgb&w=1260&h=750&dpr=2"
       />
       
       <div className="container mx-auto px-4 py-12">

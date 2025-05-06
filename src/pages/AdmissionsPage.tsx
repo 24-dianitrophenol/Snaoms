@@ -12,7 +12,8 @@ const AdmissionsPage = () => {
     >
       <PageHeader 
         title="Admissions" 
-        description="Join our prestigious institution and embark on a journey of excellence"
+        subtitle="Join our prestigious institution and embark on a journey of excellence"
+        backgroundImage="https://images.pexels.com/b&w=1260&h=750&dpr=2"
       />
       
       <div className="grid md:grid-cols-2 gap-8 mt-12">

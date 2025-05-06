@@ -10,10 +10,10 @@ const ClubsPage = () => {
     {
       name: 'Science Club',
       description: 'Explore scientific concepts through experiments and projects.',
-      image: 'https://images.pexels.com/photos/8926548/pexels-photo-8926548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.ompress&cs=tinysrgb&w=1260&h=750&dpr=2',
       meetingTime: 'Tuesdays, 4:00 PM',
       location: 'Science Laboratory',
-      leader: 'Mr. Robert Kato',
+      leader: 'Mr. Nakaswa Milton',
       activities: [
         'Science experiments',
         'Research projects',
@@ -24,10 +24,10 @@ const ClubsPage = () => {
     {
       name: 'Debate Club',
       description: 'Develop public speaking and critical thinking skills.',
-      image: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.com/260&h=750&dpr=2',
       meetingTime: 'Wednesdays, 3:30 PM',
       location: 'Main Hall',
-      leader: 'Mrs. Grace Nabatanzi',
+      leader: 'Mrs. Joan',
       activities: [
         'Weekly debates',
         'Public speaking workshops',
@@ -38,7 +38,7 @@ const ClubsPage = () => {
     {
       name: 'Sports Club',
       description: 'Participate in various sports and athletic activities.',
-      image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.comsrgb&w=1260&h=750&dpr=2',
       meetingTime: 'Daily, 4:00 PM',
       location: 'Sports Complex',
       leader: 'Mr. David Okiror',
@@ -52,7 +52,7 @@ const ClubsPage = () => {
     {
       name: 'Music & Drama Club',
       description: 'Express creativity through music and theatrical performances.',
-      image: 'https://images.pexels.com/photos/7944154/pexels-photo-7944154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.com/pr=2',
       meetingTime: 'Thursdays, 3:30 PM',
       location: 'Auditorium',
       leader: 'Ms. Patricia Akello',
@@ -66,7 +66,7 @@ const ClubsPage = () => {
     {
       name: 'Environmental Club',
       description: 'Promote environmental awareness and conservation.',
-      image: 'https://images.pexels.com/photos/8535207/pexels-photo-8535207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.ysrgb&w=1260&h=750&dpr=2',
       meetingTime: 'Fridays, 3:30 PM',
       location: 'School Garden',
       leader: 'Mr. Peter Wasswa',
@@ -80,10 +80,10 @@ const ClubsPage = () => {
     {
       name: 'Art Club',
       description: 'Explore various forms of visual arts and creativity.',
-      image: 'https://images.pexels.com/photos/8617636/pexels-photo-8617636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.com/gb&w=1260&h=750&dpr=2',
       meetingTime: 'Mondays, 4:00 PM',
       location: 'Art Studio',
-      leader: 'Ms. Janet Namuli',
+      leader: 'Mr. Otheino Martin',
       activities: [
         'Drawing classes',
         'Painting workshops',
@@ -103,7 +103,7 @@ const ClubsPage = () => {
       <PageHeader 
         title="School Clubs" 
         subtitle="Discover Your Passion Through Extra-Curricular Activities"
-        backgroundImage="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage="https://images.pexels.com/750&dpr=2"
       />
 
       <section className="py-16">

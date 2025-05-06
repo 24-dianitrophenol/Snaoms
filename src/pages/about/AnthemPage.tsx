@@ -44,7 +44,7 @@ const AnthemPage = () => {
       <PageHeader 
         title="School Anthem" 
         subtitle="Our Song of Pride and Unity"
-        backgroundImage="https://images.pexels.com/photos/7092613/pexels-photo-7092613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage="images/sliders/1.jpg"
       />
 
       <section className="py-16">

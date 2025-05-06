@@ -73,7 +73,7 @@ const CurriculumPage = () => {
       <PageHeader 
         title="Our Curriculum" 
         subtitle="Comprehensive Education for Academic Excellence"
-        backgroundImage="https://images.pexels.com/photos/5905442/pexels-photo-5905442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage="https://images.rgb&w=1260&h=750&dpr=2"
       />
 
       <section className="py-16">

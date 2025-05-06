@@ -52,7 +52,7 @@ const ProfilePage = () => {
       <PageHeader 
         title="School Profile" 
         subtitle="Excellence in Education Since 1985"
-        backgroundImage="https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage="https://images.pexels.com/photos/25640&dpr=2"
       />
 
       <section className="py-16">

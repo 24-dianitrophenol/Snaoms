@@ -73,7 +73,7 @@ const AboutPage: React.FC = () => {
       <PageHeader 
         title="About Us" 
         subtitle="Discover the story, mission, and vision behind St. Noa Mawagali S.S.S."
-        backgroundImage="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage="https://images.pexels.com0&h=750&dpr=2"
       />
 
       <section className="py-16">

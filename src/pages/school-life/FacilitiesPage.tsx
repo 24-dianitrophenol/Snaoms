@@ -13,12 +13,12 @@ const FacilitiesPage = () => {
         {
           name: 'Modern Classrooms',
           description: 'Air-conditioned classrooms equipped with smart boards and multimedia facilities.',
-          image: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+          image: 'https://images',
         },
         {
           name: 'Library',
           description: 'Extensive collection of books, digital resources, and study areas.',
-          image: 'https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+          image: 'https://images.pr=2',
         },
       ],
     },
@@ -29,12 +29,12 @@ const FacilitiesPage = () => {
         {
           name: 'Science Laboratories',
           description: 'Well-equipped physics, chemistry, and biology labs with modern equipment.',
-          image: 'https://images.pexels.com/photos/8926548/pexels-photo-8926548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+          image: 'https://images.pexels.com/photos/',
         },
         {
           name: 'Computer Labs',
           description: 'State-of-the-art computer labs with high-speed internet access.',
-          image: 'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+          image: 'https://images.pexels.com/',
         },
       ],
     },
@@ -45,12 +45,12 @@ const FacilitiesPage = () => {
         {
           name: 'Sports Complex',
           description: 'Multi-purpose sports complex for various indoor and outdoor activities.',
-          image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+          image: 'https://images.pexels.com/photos/8613089/',
         },
         {
           name: 'Swimming Pool',
           description: 'Olympic-sized swimming pool with trained instructors.',
-          image: 'https://images.pexels.com/photos/261185/pexels-photo-261185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+          image: 'https://images.pexels.com/photos/261185/',
         },
       ],
     },
@@ -61,12 +61,12 @@ const FacilitiesPage = () => {
         {
           name: 'Auditorium',
           description: 'Modern auditorium for performances, events, and assemblies.',
-          image: 'https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+          image: 'https://images.pexels.com/photos/7991579/',
         },
         {
           name: 'Music Room',
           description: 'Dedicated space for music practice with instruments and equipment.',
-          image: 'https://images.pexels.com/photos/7944154/pexels-photo-7944154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+          image: 'https://images.pexels.com/photos/',
         },
       ],
     },
@@ -105,7 +105,7 @@ const FacilitiesPage = () => {
       <PageHeader 
         title="Our Facilities" 
         subtitle="Modern Infrastructure for Quality Education"
-        backgroundImage="https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage="https://=750&dpr=2"
       />
 
       <section className="py-16">

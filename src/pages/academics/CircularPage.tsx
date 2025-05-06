@@ -52,7 +52,7 @@ const CircularPage = () => {
       <PageHeader 
         title="School Circulars" 
         subtitle="Stay Updated with Important School Announcements"
-        backgroundImage="https://images.pexels.com/photos/5905442/pexels-photo-5905442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage="images/sliders/1.jpg"
       />
 
       <section className="py-16">

@@ -12,7 +12,7 @@ const EventsPage = () => {
       date: 'March 15, 2025',
       time: '9:00 AM - 4:00 PM',
       location: 'School Sports Complex',
-      image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.com/photos/60&h=750&dpr=2',
       description: 'Join us for a day of athletic competition and school spirit.',
       activities: [
         'Track and Field Events',
@@ -26,7 +26,7 @@ const EventsPage = () => {
       date: 'April 5, 2025',
       time: '10:00 AM - 3:00 PM',
       location: 'School Auditorium',
-      image: 'https://images.pexels.com/photos/8926548/pexels-photo-8926548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.com&h=750&dpr=2',
       description: 'Showcase of student projects and innovations in science and technology.',
       activities: [
         'Project Exhibitions',
@@ -40,7 +40,7 @@ const EventsPage = () => {
       date: 'May 20, 2025',
       time: '11:00 AM - 5:00 PM',
       location: 'School Grounds',
-      image: 'https://images.pexels.com/photos/7944154/pexels-photo-7944154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.=750&dpr=2',
       description: 'Celebrate the diverse cultural heritage of our school community.',
       activities: [
         'Traditional Performances',
@@ -55,19 +55,19 @@ const EventsPage = () => {
     {
       title: 'Career Guidance Day',
       date: 'February 10, 2025',
-      image: 'https://images.pexels.com/photos/5905905/pexels-photo-5905905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.c=750&dpr=2',
       highlights: 'Professional speakers from various industries shared insights with students.',
     },
     {
       title: 'Literary Week',
       date: 'January 25, 2025',
-      image: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://imag60&h=750&dpr=2',
       highlights: 'Week-long celebration of literature featuring debates, poetry, and drama.',
     },
     {
       title: 'Parents\' Day',
       date: 'January 15, 2025',
-      image: 'https://images.pexels.com/photos/8617636/pexels-photo-8617636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.h=750&dpr=2',
       highlights: 'Annual meeting with parents to discuss student progress and school development.',
     },
   ];
@@ -82,7 +82,7 @@ const EventsPage = () => {
       <PageHeader 
         title="School Events" 
         subtitle="Join Us in Celebrating Learning and Achievement"
-        backgroundImage="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage="https://iinysrgb&w=1260&h=750&dpr=2"
       />
 
       <section className="py-16">

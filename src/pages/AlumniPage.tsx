@@ -10,21 +10,21 @@ const AlumniPage: React.FC = () => {
       name: 'Dr. Sarah Namukasa',
       graduation: '2005',
       profession: 'Medical Doctor',
-      image: 'https://images.pexels.com/photos/5214995/pexels-photo-5214995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.1260&h=750&dpr=2',
       quote: 'The foundation I received at St. Noa Mawagali shaped my medical career.'
     },
     {
       name: 'Eng. David Mukasa',
       graduation: '2008',
       profession: 'Civil Engineer',
-      image: 'https://images.pexels.com/photos/8961065/pexels-photo-8961065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.com/&w=1260&h=750&dpr=2',
       quote: 'The strong mathematics program helped me excel in engineering.'
     },
     {
       name: 'Hon. Patricia Okiror',
       graduation: '2000',
       profession: 'Member of Parliament',
-      image: 'https://images.pexels.com/photos/5989068/pexels-photo-5989068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexelsysrgb&w=1260&h=750&dpr=2',
       quote: 'Leadership skills I gained here continue to serve me in public service.'
     }
   ];
@@ -39,7 +39,7 @@ const AlumniPage: React.FC = () => {
       <PageHeader 
         title="Alumni Network" 
         subtitle="Celebrating the success stories of our graduates"
-        backgroundImage="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage="https://images.pexels.com/"
       />
 
       <section className="py-16">

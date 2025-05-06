@@ -9,19 +9,19 @@ const SchoolLifePage: React.FC = () => {
     {
       title: 'Sports & Athletics',
       description: 'Comprehensive sports programs including football, basketball, athletics, and more.',
-      image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.com',
       link: '/school-life/facilities'
     },
     {
       title: 'Arts & Culture',
       description: 'Various cultural activities, music programs, drama club, and art exhibitions.',
-      image: 'https://images.pexels.com/photos/7944154/pexels-photo-7944154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.com/',
       link: '/school-life/clubs'
     },
     {
       title: 'Student Leadership',
       description: 'Opportunities for leadership through prefect body and student council.',
-      image: 'https://images.pexels.com/photos/8535207/pexels-photo-8535207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.com/',
       link: '/school-life/prefect-body'
     }
   ];
@@ -36,7 +36,7 @@ const SchoolLifePage: React.FC = () => {
       <PageHeader 
         title="School Life" 
         subtitle="Discover the vibrant community and activities that make our school special"
-        backgroundImage="https://images.pexels.com/photos/8617636/pexels-photo-8617636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage="https://images.pexels.com/r=2"
       />
 
       <section className="py-16">

@@ -96,7 +96,7 @@ const HowToApplyPage = () => {
       <PageHeader 
         title="How to Apply" 
         subtitle="Your Journey to Joining Our School Community"
-        backgroundImage="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage="https://images.pexergb&w=1260&h=750&dpr=2"
       />
 
       <section className="py-16">

@@ -10,7 +10,7 @@ const PrefectBodyPage = () => {
       position: 'Head Boy',
       name: 'David Mukasa',
       class: 'S.6 Arts',
-      image: 'https://images.pexels.com/photos/8617636/pexels-photo-8617636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.1260&h=750&dpr=2',
       email: 'headboy@stnoamawagali.edu',
       phone: '+256 700 123 456',
       responsibilities: [
@@ -24,7 +24,7 @@ const PrefectBodyPage = () => {
       position: 'Head Girl',
       name: 'Sarah Namukasa',
       class: 'S.6 Sciences',
-      image: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.1260&h=750&dpr=2',
       email: 'headgirl@stnoamawagali.edu',
       phone: '+256 700 123 457',
       responsibilities: [
@@ -38,7 +38,7 @@ const PrefectBodyPage = () => {
       position: 'Academic Prefect',
       name: 'Peter Okiror',
       class: 'S.6 Sciences',
-      image: 'https://images.pexels.com/photos/5905905/pexels-photo-5905905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.com',
       email: 'academics@stnoamawagali.edu',
       phone: '+256 700 123 458',
       responsibilities: [
@@ -52,7 +52,7 @@ const PrefectBodyPage = () => {
       position: 'Sports Prefect',
       name: 'Patricia Akello',
       class: 'S.5 Arts',
-      image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.com',
       email: 'sports@stnoamawagali.edu',
       phone: '+256 700 123 459',
       responsibilities: [
@@ -122,7 +122,7 @@ const PrefectBodyPage = () => {
       <PageHeader 
         title="Prefect Body" 
         subtitle="Our Student Leadership Team"
-        backgroundImage="https://images.pexels.com/photos/8617636/pexels-photo-8617636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage="https://images.pexels.com750&dpr=2"
       />
 
       <section className="py-16">

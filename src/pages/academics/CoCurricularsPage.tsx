@@ -8,7 +8,7 @@ const CoCurricularsPage = () => {
   const activities = [
     {
       category: 'Sports',
-      image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.com/photos/',
       items: [
         'Football',
         'Basketball',
@@ -20,7 +20,7 @@ const CoCurricularsPage = () => {
     },
     {
       category: 'Arts & Culture',
-      image: 'https://images.pexels.com/photos/7944154/pexels-photo-7944154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.com',
       items: [
         'Music Club',
         'Drama Club',
@@ -32,7 +32,7 @@ const CoCurricularsPage = () => {
     },
     {
       category: 'Academic Clubs',
-      image: 'https://images.pexels.com/photos/8926548/pexels-photo-8926548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.com/photos/8926548/',
       items: [
         'Science Club',
         'Debate Club',
@@ -44,7 +44,7 @@ const CoCurricularsPage = () => {
     },
     {
       category: 'Leadership & Service',
-      image: 'https://images.pexels.com/photos/8535207/pexels-photo-8535207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.pexels.com/photos/85352',
       items: [
         'Student Council',
         'Prefect Body',
@@ -89,7 +89,7 @@ const CoCurricularsPage = () => {
       <PageHeader 
         title="Co-Curricular Activities" 
         subtitle="Developing Well-Rounded Individuals Through Extra-Curricular Excellence"
-        backgroundImage="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage="https://images.pexels.dpr=2"
       />
 
       <section className="py-16">

@@ -7,58 +7,58 @@ import { Mail, Phone } from 'lucide-react';
 const AdministrationPage = () => {
   const administrators = [
     {
-      name: 'Dr. John Mukasa',
+      name: 'Mr. Saali Leonard',
       position: 'School Director',
-      image: 'https://images.pexels.com/photos/5397723/pexels-photo-5397723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: '',
       email: 'director@stnoamawagali.edu',
       phone: '+256 123 456 789',
       bio: 'Dr. Mukasa brings over 20 years of experience in education leadership and has been instrumental in the school\'s growth since 2010.',
     },
     {
-      name: 'Mrs. Sarah Namukasa',
+      name: 'Mr. Saali Leonard',
       position: 'Head Teacher',
-      image: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: '',
       email: 'headteacher@stnoamawagali.edu',
       phone: '+256 123 456 790',
       bio: 'With extensive experience in curriculum development and student affairs, Mrs. Namukasa ensures academic excellence across all programs.',
     },
     {
-      name: 'Mr. David Okiror',
+      name: 'Mr. Kaino George',
       position: 'Deputy Head Teacher (Academics)',
-      image: 'https://images.pexels.com/photos/5905905/pexels-photo-5905905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: '',
       email: 'academics@stnoamawagali.edu',
       phone: '+256 123 456 791',
-      bio: 'Mr. Okiror oversees all academic programs and works closely with department heads to maintain high educational standards.',
+      bio: 'Mr. Kaino George oversees all academic programs and works closely with department heads to maintain high educational standards.',
     },
     {
-      name: 'Ms. Patricia Akello',
+      name: 'Ms. Patricia',
       position: 'Deputy Head Teacher (Administration)',
-      image: 'https://images.pexels.com/photos/5212326/pexels-photo-5212326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: '',
       email: 'admin@stnoamawagali.edu',
       phone: '+256 123 456 792',
-      bio: 'Ms. Akello manages school operations and ensures smooth running of all administrative functions.',
+      bio: 'Ms. Patricia manages school operations and ensures smooth running of all administrative functions.',
     },
   ];
 
   const departments = [
     {
       name: 'Sciences Department',
-      head: 'Dr. Robert Kato',
+      head: 'Dr. Nakaswa Milton',
       description: 'Oversees Biology, Chemistry, and Physics programs',
     },
     {
       name: 'Mathematics Department',
-      head: 'Mr. Peter Wasswa',
+      head: 'Mr. Musa',
       description: 'Coordinates all mathematics and statistics courses',
     },
     {
       name: 'Languages Department',
-      head: 'Mrs. Grace Nabatanzi',
+      head: 'Madam. Joan',
       description: 'Manages English, Literature, and Local Language programs',
     },
     {
-      name: 'Humanities Department',
-      head: 'Ms. Janet Namuli',
+      name: 'GeoG and Careers Department',
+      head: 'Mr. Tandru Pasi',
       description: 'Coordinates History, Geography, and Religious Studies',
     },
   ];
@@ -73,7 +73,7 @@ const AdministrationPage = () => {
       <PageHeader 
         title="School Administration" 
         subtitle="Meet our dedicated leadership team"
-        backgroundImage="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage="https://images.pexels.com/pr=2"
       />
 
       <section className="py-16">

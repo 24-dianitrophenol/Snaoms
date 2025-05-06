@@ -18,11 +18,11 @@ const GalleryPage = () => {
       category: 'Academic',
       images: [
         {
-          url: 'https://images.pexels.com/photos/8926548/pexels-photo-8926548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+          url: 'https://images.pexels.com/photos/8926548/prgb&w=1260&h=750&dpr=2',
           caption: 'Science Laboratory Session',
         },
         {
-          url: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+          url: 'https://images.pexels.com/pnysrgb&w=1260&h=750&dpr=2',
           caption: 'Classroom Discussion',
         },
       ],
@@ -31,11 +31,11 @@ const GalleryPage = () => {
       category: 'Sports',
       images: [
         {
-          url: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+          url: 'https://images.pexels.com/photos/8613089/pexels-photogb&w=1260&h=750&dpr=2',
           caption: 'Annual Sports Day',
         },
         {
-          url: 'https://images.pexels.com/photos/8535207/pexels-photo-8535207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+          url: 'https://images.pexels.com/photos/853520inysrgb&w=1260&h=750&dpr=2',
           caption: 'Football Tournament',
         },
       ],
@@ -44,11 +44,11 @@ const GalleryPage = () => {
       category: 'Cultural',
       images: [
         {
-          url: 'https://images.pexels.com/photos/7944154/pexels-photo-7944154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+          url: 'https://imagesysrgb&w=1260&h=750&dpr=2',
           caption: 'Cultural Performance',
         },
         {
-          url: 'https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+          url: 'https://images.pexe=1260&h=750&dpr=2',
           caption: 'Traditional Dance Show',
         },
       ],
@@ -57,11 +57,11 @@ const GalleryPage = () => {
       category: 'Events',
       images: [
         {
-          url: 'https://images.pexels.com/photos/8617636/pexels-photo-8617636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+          url: 'https://images.pex260&h=750&dpr=2',
           caption: 'Graduation Ceremony',
         },
         {
-          url: 'https://images.pexels.com/photos/5905905/pexels-photo-5905905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+          url: 'https://images.pexels.1260&h=750&dpr=2',
           caption: 'Parents Day',
         },
       ],
@@ -70,11 +70,11 @@ const GalleryPage = () => {
       category: 'Campus Life',
       images: [
         {
-          url: 'https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+          url: 'https://images.pexels.com/=750&dpr=2',
           caption: 'School Building',
         },
         {
-          url: 'https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+          url: 'https://images.pexels.com/',
           caption: 'Library',
         },
       ],
@@ -91,7 +91,7 @@ const GalleryPage = () => {
       <PageHeader 
         title="Photo Gallery" 
         subtitle="Capturing Moments and Memories at St. Noa Mawagali"
-        backgroundImage="https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage="https://images.pexels.com/=750&dpr=2"
       />
 
       <section className="py-16">

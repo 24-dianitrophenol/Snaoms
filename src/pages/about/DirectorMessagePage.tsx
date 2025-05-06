@@ -15,7 +15,7 @@ const DirectorMessagePage = () => {
       <PageHeader 
         title="Director's Message" 
         subtitle="Welcome to St. Noa Mawagali S.S.S."
-        backgroundImage="https://images.pexels.com/photos/5905905/pexels-photo-5905905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        backgroundImage="images/sliders/1.jpg"
       />
 
       <section className="py-16">
@@ -31,21 +31,21 @@ const DirectorMessagePage = () => {
               <div className="md:flex">
                 <div className="md:w-1/3">
                   <img
-                    src="https://images.pexels.com/photos/5397723/pexels-photo-5397723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="School Director"
+                    src=""
+                    alt="School Head Teacher"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="md:w-2/3 p-8">
                   <h2 className="text-2xl font-semibold text-primary-600 mb-2">
-                    Dr. John Mukasa
+                    Mr. Saali Leonard
                   </h2>
                   <p className="text-accent-600 font-medium mb-4">School Director</p>
                   <div className="space-y-2 mb-4">
                     <div className="flex items-center text-gray-600">
                       <Mail size={16} className="mr-2" />
                       <a href="mailto:director@stnoamawagali.edu" className="hover:text-primary-600">
-                        director@stnoamawagali.edu
+                        saali@stnoamawagali.edu
                       </a>
                     </div>
                     <div className="flex items-center text-gray-600">
@@ -105,8 +105,8 @@ const DirectorMessagePage = () => {
                 </p>
                 <p className="text-gray-600 font-semibold">
                   Warm regards,<br />
-                  Dr. John Mukasa<br />
-                  School Director
+                  Mr. Saali Leonard<br />
+                  School Head Teacher
                 </p>
               </div>
             </motion.div>
