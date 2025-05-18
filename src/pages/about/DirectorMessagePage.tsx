@@ -31,7 +31,7 @@ const DirectorMessagePage = () => {
               <div className="md:flex">
                 <div className="md:w-1/3">
                   <img
-                    src=""
+                    src="images/"
                     alt="School Head Teacher"
                     className="w-full h-full object-cover"
                   />

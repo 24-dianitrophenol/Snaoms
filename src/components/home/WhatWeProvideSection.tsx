@@ -9,14 +9,14 @@ const services = [
   },
   {
     title: 'Sports',
-    image: 'images/sports.jpg',
+    image: '',
     description: "We develop students' talents through games and sports. Our students participate in both national and international games and sports competitions.",
     color: 'bg-primary-600',
   },
   {
     title: 'Transport',
-    image: 'images/transport.jpg',
-    description: 'The school has four buses that transport our students whenever they have to go out for study trips.',
+    image: 'images/photos/bus.jpg',
+    description: 'The school has buses that transport our students whenever they have to go out for study trips.',
     color: 'bg-primary-600',
   },
   {

@@ -4,34 +4,56 @@ import { motion } from 'framer-motion';
 import PageHeader from '../../components/common/PageHeader';
 
 const AnthemPage = () => {
-  const verses = [
+  const anthemSections = [
+    {
+      title: 'CHORUS',
+      lines: [
+        'St. Noa St. Noa in God we trust for the future',
+        'as we strive to achieve the victory… x2',
+      ],
+    },
     {
       title: 'Verse 1',
       lines: [
-        'St. Noa Mawagali, our beacon bright',
-        'Leading us forward through day and night',
-        'With knowledge and wisdom, we shall grow',
-        'In unity and strength, our spirits flow'
-      ]
+        'The journey to success is our target, through discipline hard working with',
+        'blessings of our teachers who constantly guide us with persistent love.',
+      ],
     },
     {
-      title: 'Chorus',
+      title: 'CHORUS',
       lines: [
-        'St. Noa Mawagali, proud and true',
-        'Our hearts and minds forever with you',
-        'Excellence and honor guide our way',
-        'As we learn and grow day by day'
-      ]
+        'St. Noa St. Noa in God we trust for the future',
+        'as we strive to achieve the victory... x2',
+      ],
     },
     {
       title: 'Verse 2',
       lines: [
-        'In faith and courage, we stand as one',
-        'Our journey of learning has just begun',
-        'With dedication, we\'ll reach our goals',
-        'Building futures, nurturing souls'
-      ]
-    }
+        'Love, kindness and unity, the order of practice everywhere, respecting our',
+        'parents together with patron, St. Noa Mawaggali.',
+      ],
+    },
+    {
+      title: 'CHORUS',
+      lines: [
+        'St. Noa St. Noa in God we trust for the future',
+        'as we strive to achieve the victory… x2',
+      ],
+    },
+    {
+      title: 'Verse 3',
+      lines: [
+        'God our father of creation, we hang our future unto thee in moral cultivation,',
+        'wisdom really comes from God.',
+      ],
+    },
+    {
+      title: 'CHORUS',
+      lines: [
+        'St. Noa St. Noa in God we trust for the future',
+        'as we strive to achieve the victory… x2',
+      ],
+    },
   ];
 
   return (
@@ -57,27 +79,25 @@ const AnthemPage = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-3xl font-display font-bold text-primary-600 mb-8">Our School Anthem</h2>
-            
             <div className="space-y-12">
-              {verses.map((verse, index) => (
+              {anthemSections.map((section, index) => (
                 <motion.div
-                  key={verse.title}
+                  key={index}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.2 }}
                   className="bg-white rounded-lg shadow-md p-8"
                 >
-                  <h3 className="text-xl font-semibold text-primary-600 mb-4">{verse.title}</h3>
+                  <h3 className="text-xl font-semibold text-primary-600 mb-4">{section.title}</h3>
                   <div className="space-y-2">
-                    {verse.lines.map((line, lineIndex) => (
+                    {section.lines.map((line, lineIndex) => (
                       <p key={lineIndex} className="text-gray-700 italic">{line}</p>
                     ))}
                   </div>
                 </motion.div>
               ))}
             </div>
-
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -87,9 +107,7 @@ const AnthemPage = () => {
             >
               <h3 className="text-xl font-semibold text-primary-600 mb-4">About Our Anthem</h3>
               <p className="text-gray-700">
-                Our school anthem was composed in 1985 and has been inspiring generations of students ever since. 
-                It embodies our core values of excellence, unity, and dedication to learning. The anthem is sung 
-                during all major school events and serves as a reminder of our shared mission and vision.
+                Our school anthem inspires us to strive for victory, unity, discipline, and faith in God, reflecting the values and spirit of St. Noa Mawagali S.S.S.
               </p>
             </motion.div>
           </motion.div>

@@ -6,7 +6,7 @@ import Button from '../common/Button';
 const slides = [
   {
     id: 1,
-    image: 'images/sliders/1.jpg',
+    image: 'images/photos/IMG1.JPG',
     title: 'Welcome to St. Noa Mawagali S.S.S',
     subtitle: 'Nurturing Excellence, Building Character, Shaping the Future',
     ctaText: 'Explore Our School',
@@ -14,7 +14,7 @@ const slides = [
   },
   {
     id: 2,
-    image: 'images/sliders/2.jpg',
+    image: 'images/photos/IMG2.JPG',
     title: 'Academic Excellence',
     subtitle: 'Providing quality education with modern teaching methods and facilities',
     ctaText: 'Our Academics',
@@ -22,7 +22,7 @@ const slides = [
   },
   {
     id: 3,
-    image: 'images/sliders/cc.jpg',
+    image: 'images/photos/IMG5.JPG',
     title: 'Join Our Community',
     subtitle: 'Discover the admission process and become part of our vibrant school family',
     ctaText: 'Apply Now',

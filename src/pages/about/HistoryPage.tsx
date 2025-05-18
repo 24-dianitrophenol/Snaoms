@@ -54,7 +54,7 @@ const HistoryPage = () => {
             {/* Who is Noa Mawaggali? */}
             <div className="flex flex-col md:flex-row items-center gap-6">
               <div className="w-full md:w-1/2 order-1 md:order-1">
-                <img src="images/noa.jpg" alt="Noa Mawaggali" className="w-full h-64 object-cover rounded-xl shadow-md mb-4 md:mb-0" />
+                <img src="images/founders/stnoa.jpg" alt="Noa Mawaggali" className="w-full h-64 object-cover rounded-xl shadow-md mb-4 md:mb-0" />
               </div>
               <div className="w-full md:w-1/2 order-2 md:order-2 flex flex-col justify-center">
                 <h3 className="font-bold text-primary-600 mb-2 text-xl md:text-2xl text-center md:text-right">Who is Noa Mawaggali?</h3>
@@ -72,7 +72,7 @@ const HistoryPage = () => {
             {/* Background of the School */}
             <div className="flex flex-col md:flex-row items-center gap-6">
               <div className="w-full md:w-1/2 order-1 md:order-1">
-                <img src="images/school.jpg" alt="School" className="w-full h-64 object-cover rounded-xl shadow-md mb-4 md:mb-0" />
+                <img src="images/" alt="School" className="w-full h-64 object-cover rounded-xl shadow-md mb-4 md:mb-0" />
               </div>
               <div className="w-full md:w-1/2 order-2 md:order-2 flex flex-col justify-center">
                 <h3 className="font-bold text-primary-600 mb-2 text-xl md:text-2xl text-center md:text-right">Background of the School</h3>
