@@ -40,6 +40,8 @@ import PrefectBodyPage from './pages/school-life/PrefectBodyPage';
 import ClubsPage from './pages/school-life/ClubsPage';
 import GalleryPage from './pages/school-life/GalleryPage';
 
+import AdvertsPage from './pages/AdvertsPage';
+
 const App: React.FC = () => {
   const [showSplash, setShowSplash] = useState(true);
 
@@ -87,6 +89,9 @@ const App: React.FC = () => {
                 {/* Other Main Routes */}
                 <Route path="alumni" element={<AlumniPage />} />
                 <Route path="contact" element={<ContactPage />} />
+
+                {/* Adverts Route */}
+                <Route path="/adverts" element={<AdvertsPage />} />
 
                 {/* Catch-all for 404 */}
                 <Route path="*" element={<NotFoundPage />} />
