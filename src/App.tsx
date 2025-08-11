@@ -26,6 +26,7 @@ import AdministrationPage from './pages/about/AdministrationPage';
 import DirectorMessagePage from './pages/about/DirectorMessagePage';
 
 import CurriculumPage from './pages/academics/CurriculumPage';
+import SchoolProgramPage from './pages/academics/SchoolProgramPage';
 import CoCurricularsPage from './pages/academics/CoCurricularsPage';
 import DepartmentsPage from './pages/academics/DepartmentsPage';
 import CircularPage from './pages/academics/CircularPage';
@@ -33,6 +34,7 @@ import SchoolPerformancePage from './pages/SchoolPerformancePage';
 
 import CareersPage from './pages/admissions/CareersPage';
 import HowToApplyPage from './pages/admissions/HowToApplyPage';
+import StudentAdmissionsPage from './pages/admissions/StudentAdmissionsPage';
 
 import EventsPage from './pages/school-life/EventsPage';
 import FacilitiesPage from './pages/school-life/FacilitiesPage';
@@ -41,6 +43,10 @@ import ClubsPage from './pages/school-life/ClubsPage';
 import GalleryPage from './pages/school-life/GalleryPage';
 
 import AdvertsPage from './pages/AdvertsPage';
+
+// Admin Pages
+import AdminLoginPage from './pages/admin/AdminLoginPage';
+import AdminDashboardPage from './pages/admin/AdminDashboardPage';
 
 const App: React.FC = () => {
   const [showSplash, setShowSplash] = useState(true);
@@ -68,6 +74,7 @@ const App: React.FC = () => {
                 {/* Academics Routes */}
                 <Route path="academics" element={<AcademicsPage />} />
                 <Route path="academics/curriculum" element={<CurriculumPage />} />
+                <Route path="academics/school-program" element={<SchoolProgramPage />} />
                 <Route path="academics/co-curriculars" element={<CoCurricularsPage />} />
                 <Route path="academics/departments" element={<DepartmentsPage />} />
                 <Route path="academics/circular" element={<CircularPage />} />
@@ -77,6 +84,7 @@ const App: React.FC = () => {
                 <Route path="admissions" element={<AdmissionsPage />} />
                 <Route path="admissions/careers" element={<CareersPage />} />
                 <Route path="admissions/how-to-apply" element={<HowToApplyPage />} />
+                <Route path="admissions/student-admissions" element={<StudentAdmissionsPage />} />
 
                 {/* School Life Routes */}
                 <Route path="school-life" element={<SchoolLifePage />} />
@@ -92,6 +100,10 @@ const App: React.FC = () => {
 
                 {/* Adverts Route */}
                 <Route path="/adverts" element={<AdvertsPage />} />
+
+                {/* Admin Routes */}
+                <Route path="/admin/login" element={<AdminLoginPage />} />
+                <Route path="/admin/dashboard" element={<AdminDashboardPage />} />
 
                 {/* Catch-all for 404 */}
                 <Route path="*" element={<NotFoundPage />} />

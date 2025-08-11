@@ -41,6 +41,7 @@ const navItems: NavItem[] = [
     icon: <Book size={18} />,
     items: [
       { title: 'Curriculum', path: '/academics/curriculum' },
+      { title: 'School Program', path: '/academics/school-program' },
       { title: 'Co-Curriculars', path: '/academics/co-curriculars' },
       { title: 'Departments', path: '/academics/departments' },
       { title: 'School Circular', path: '/academics/circular' },
@@ -53,6 +54,7 @@ const navItems: NavItem[] = [
     dropdown: true,
     icon: <Graduation size={18} />,
     items: [
+      { title: 'Student Admissions', path: '/admissions/student-admissions' },
       { title: 'Careers', path: '/admissions/careers' },
       { title: 'How to Apply', path: '/admissions/how-to-apply' },
     ],
@@ -166,7 +168,7 @@ const Navbar: React.FC = () => {
 
             {/* Left side on desktop, top line on mobile (Phone Numbers) */}
             <div className="flex items-center justify-center md:justify-start space-x-4">
-              <div className="flex items-center">
+          <div className="flex items-center">
                 <Phone size={16} className="mr-2" />
                 <a href="tel:+256772658134" className="hover:text-green-300 transition-colors whitespace-nowrap">
                   +256-772-658134
@@ -174,13 +176,13 @@ const Navbar: React.FC = () => {
                 <span className="mx-2 text-white/60">|</span>
                 <a href="tel:+256756800003" className="hover:text-green-300 transition-colors whitespace-nowrap">
                   +256-756-800003
-                </a>
-              </div>
-            </div>
+          </a>
+        </div>
+      </div>
 
             {/* Right side on desktop, bottom line on mobile (Email and Adverts Button) */}
             {/* On mobile, this div will appear below the phone numbers div due to flex-col */}
-            <div className="flex flex-row items-center justify-center md:justify-end space-x-4 md:space-x-6 mt-2 md:mt-0">
+            <div className="flex flex-col md:flex-row items-center justify-center md:justify-end space-y-2 md:space-y-0 md:space-x-6">
                {/* Email */}
                <div className="flex items-center">
                  <Mail size={16} className="mr-2" />
@@ -214,7 +216,7 @@ const Navbar: React.FC = () => {
               </div>
             </div>
             
-            {/* Slogan and Enroll Button */}
+        {/* Slogan and Enroll Button */}
             <div className="flex flex-col items-center md:items-end">
               <span className="text-xl md:text-2xl font-bold text-black font-[cursive] mb-2">"Wisdom Comes from God"</span>
               <img src="/images/enroll.png" alt="Enroll Now" className="w-40 md:w-48 h-20 md:h-24 object-contain" />
@@ -327,22 +329,22 @@ const Navbar: React.FC = () => {
                     transition={{ duration: 0.3 }}
                     className="flex items-center"
                   >
-                    <form onSubmit={handleSearch} className="flex items-center">
-                      <input
-                        type="text"
-                        value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
-                        placeholder="Search..."
+                <form onSubmit={handleSearch} className="flex items-center">
+                    <input
+                      type="text"
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      placeholder="Search..."
                         className="w-48 px-3 py-1.5 bg-white/10 text-white placeholder-white/70 rounded-l-lg focus:outline-none focus:ring-1 focus:ring-accent-500 text-sm"
                         autoFocus
-                      />
-                      <button
-                        type="submit"
+                    />
+                    <button
+                      type="submit"
                         className="px-3 py-1.5 bg-accent-500 text-white rounded-r-lg hover:bg-accent-600 transition-colors text-sm"
-                      >
+                    >
                         <Search size={16} />
-                      </button>
-                    </form>
+                    </button>
+                </form>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -356,10 +358,10 @@ const Navbar: React.FC = () => {
             </div>
           </div>
 
-          {/* Mobile Menu */}
-          <AnimatePresence>
-            {isOpen && (
-              <motion.div
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
                 initial={{ opacity: 0, x: '-100%' }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: '-100%' }}
@@ -383,23 +385,23 @@ const Navbar: React.FC = () => {
 
                   {/* Mobile Navigation */}
                   <nav className="space-y-4">
-                    {navItems.map((item, index) => (
+              {navItems.map((item, index) => (
                       <div key={item.title}>
-                        {item.dropdown ? (
+                  {item.dropdown ? (
                           <div>
-                            <button
-                              onClick={() => toggleDropdown(index)}
+                      <button
+                        onClick={() => toggleDropdown(index)}
                               className="flex items-center justify-between w-full py-3 text-white hover:text-accent-300 transition-colors"
-                            >
+                      >
                               <div className="flex items-center space-x-2">
                                 {item.icon}
-                                <span>{item.title}</span>
-                              </div>
-                              {activeDropdown === index ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-                            </button>
-                            <AnimatePresence>
+                          <span>{item.title}</span>
+                        </div>
+                        {activeDropdown === index ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                      </button>
+                      <AnimatePresence>
                               {activeDropdown === index && item.items && (
-                                <motion.div
+                          <motion.div
                                   initial={{ height: 0, opacity: 0 }}
                                   animate={{ height: 'auto', opacity: 1 }}
                                   exit={{ height: 0, opacity: 0 }}
@@ -409,29 +411,29 @@ const Navbar: React.FC = () => {
                                   {item.items.map((subItem) => (
                                     <Link
                                       key={subItem.path}
-                                      to={subItem.path}
+                                to={subItem.path}
                                       className="block py-2 text-gray-300 hover:text-accent-300 transition-colors"
                                       onClick={() => setIsOpen(false)}
-                                    >
-                                      {subItem.title}
+                              >
+                                {subItem.title}
                                     </Link>
-                                  ))}
-                                </motion.div>
-                              )}
-                            </AnimatePresence>
+                            ))}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
                           </div>
-                        ) : (
-                          <NavLink
-                            to={item.path}
+                  ) : (
+                    <NavLink
+                      to={item.path}
                             className={({ isActive }) => `flex items-center space-x-2 py-3 ${isActive ? 'text-accent-500' : 'text-white hover:text-accent-300'} transition-colors`}
                             onClick={() => setIsOpen(false)}
                           >
                             {item.icon}
                             <span>{item.title}</span>
-                          </NavLink>
-                        )}
-                      </div>
-                    ))}
+                    </NavLink>
+                  )}
+                </div>
+              ))}
                   </nav>
 
                   {/* Mobile Contact Info */}
@@ -447,10 +449,10 @@ const Navbar: React.FC = () => {
                       </a>
                     </div>
                   </div>
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
         </div>
       </motion.header>
     </>
