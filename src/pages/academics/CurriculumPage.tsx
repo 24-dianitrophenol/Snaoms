@@ -3,8 +3,11 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import PageHeader from '../../components/common/PageHeader';
 import { BookOpen, Award, Clock, Users } from 'lucide-react';
+import { useCurriculum } from '../../hooks/useDatabase';
 
 const CurriculumPage = () => {
+  const { curriculum, loading } = useCurriculum();
+
   const programs = [
     {
       level: 'O-Level (S1-S4)',
@@ -113,6 +116,36 @@ const CurriculumPage = () => {
             <h2 className="text-3xl font-display font-bold text-primary-600 mb-8 text-center">
               Academic Programs
             </h2>
+            
+            {/* Dynamic Curriculum from Database */}
+            {!loading && curriculum.length > 0 && (
+              <div className="mb-8">
+                <h3 className="text-2xl font-semibold text-primary-600 mb-6">Current Curriculum</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {curriculum.map((item) => (
+                    <div key={item.id} className="bg-white rounded-lg shadow-lg p-6">
+                      <h4 className="text-xl font-semibold text-primary-600 mb-2">{item.subject}</h4>
+                      <p className="text-accent-600 font-medium mb-2">Grade: {item.gradeLevel}</p>
+                      <p className="text-gray-600 mb-4">{item.description}</p>
+                      {item.objectives.length > 0 && (
+                        <div>
+                          <h5 className="font-semibold text-gray-700 mb-2">Learning Objectives:</h5>
+                          <ul className="space-y-1">
+                            {item.objectives.map((objective, index) => (
+                              <li key={index} className="flex items-center text-gray-600">
+                                <span className="w-2 h-2 bg-accent-500 rounded-full mr-2"></span>
+                                {objective}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {programs.map((program, index) => (
                 <div

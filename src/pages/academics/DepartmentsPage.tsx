@@ -3,8 +3,11 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import PageHeader from '../../components/common/PageHeader';
 import { BookOpen, Users, Award, Clock } from 'lucide-react';
+import { useDepartments } from '../../hooks/useDatabase';
 
 const DepartmentsPage = () => {
+  const { departments, loading } = useDepartments();
+
   const departments = [
     {
       name: 'Sciences Department',
@@ -100,6 +103,47 @@ const DepartmentsPage = () => {
 
           {/* Departments */}
           <div className="space-y-16">
+            {/* Dynamic Departments from Database */}
+            {!loading && departments.length > 0 && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <h2 className="text-3xl font-display font-bold text-primary-600 mb-8">
+                  Our Departments
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  {departments.map((department) => (
+                    <div key={department.id} className="bg-white rounded-lg shadow-lg p-6">
+                      <h3 className="text-2xl font-semibold text-primary-600 mb-2">
+                        {department.name}
+                      </h3>
+                      <p className="text-accent-600 font-medium mb-4">
+                        Head of Department: {department.head}
+                      </p>
+                      <p className="text-gray-600 mb-4">{department.description}</p>
+                      <h4 className="text-lg font-semibold text-primary-600 mb-2">
+                        Subjects Offered:
+                      </h4>
+                      <div className="grid grid-cols-2 gap-4">
+                        {department.subjects.map((subject, subIndex) => (
+                          <div
+                            key={subIndex}
+                            className="flex items-center text-gray-600"
+                          >
+                            <span className="w-2 h-2 bg-accent-500 rounded-full mr-2"></span>
+                            {subject}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+
             {departments.map((department, index) => (
               <motion.div
                 key={department.name}

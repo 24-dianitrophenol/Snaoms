@@ -4,8 +4,11 @@ import { motion } from 'framer-motion';
 import PageHeader from '../../components/common/PageHeader';
 import { Briefcase, Clock, MapPin, GraduationCap } from 'lucide-react';
 import Button from '../../components/common/Button';
+import { useCareers } from '../../hooks/useDatabase';
 
 const CareersPage = () => {
+  const { careers, loading } = useCareers();
+
   const currentOpenings = [
     {
       position: 'Mathematics Teacher',
@@ -126,6 +129,63 @@ const CareersPage = () => {
             <h2 className="text-3xl font-display font-bold text-primary-600 mb-8 text-center">
               Current Openings
             </h2>
+            
+            {/* Dynamic Careers from Database */}
+            {!loading && careers.length > 0 && (
+              <div className="space-y-8 mb-12">
+                <h3 className="text-2xl font-semibold text-primary-600 mb-6">Available Positions</h3>
+                {careers
+                  .filter(career => career.status === 'open')
+                  .map((job) => (
+                    <div key={job.id} className="bg-white rounded-lg shadow-lg p-6">
+                      <div className="md:flex justify-between items-start mb-6">
+                        <div>
+                          <h4 className="text-xl font-semibold text-primary-600 mb-2">
+                            {job.position}
+                          </h4>
+                          <p className="text-accent-600">{job.department}</p>
+                        </div>
+                        <div className="mt-4 md:mt-0">
+                          <Button variant="primary" size="sm">
+                            Apply Now
+                          </Button>
+                        </div>
+                      </div>
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                        <div className="flex items-center text-gray-600">
+                          <Briefcase size={16} className="mr-2" />
+                          <span>{job.type}</span>
+                        </div>
+                        <div className="flex items-center text-gray-600">
+                          <Clock size={16} className="mr-2" />
+                          <span>{job.experience}</span>
+                        </div>
+                        <div className="flex items-center text-gray-600">
+                          <MapPin size={16} className="mr-2" />
+                          <span>Main Campus</span>
+                        </div>
+                      </div>
+                      <p className="text-gray-600 mb-4">{job.description}</p>
+                      <h5 className="font-semibold text-gray-700 mb-2">Requirements:</h5>
+                      <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                        {job.requirements.map((req, reqIndex) => (
+                          <li
+                            key={reqIndex}
+                            className="flex items-center text-gray-600"
+                          >
+                            <span className="w-2 h-2 bg-accent-500 rounded-full mr-2"></span>
+                            {req}
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="mt-4 text-sm text-gray-500">
+                        Deadline: {new Date(job.deadline).toLocaleDateString()}
+                      </div>
+                    </div>
+                  ))}
+              </div>
+            )}
+
             <div className="space-y-8">
               {currentOpenings.map((job, index) => (
                 <div

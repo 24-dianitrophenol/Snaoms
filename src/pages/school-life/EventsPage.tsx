@@ -4,8 +4,11 @@ import { motion } from 'framer-motion';
 import PageHeader from '../../components/common/PageHeader';
 import { Calendar, MapPin, Clock, Users } from 'lucide-react';
 import Button from '../../components/common/Button';
+import { useSchoolEvents } from '../../hooks/useDatabase';
 
 const EventsPage = () => {
+  const { schoolEvents, loading } = useSchoolEvents();
+
   const upcomingEvents = [
     {
       title: 'Annual Sports Day',
@@ -98,6 +101,52 @@ const EventsPage = () => {
             <h2 className="text-3xl font-display font-bold text-primary-600 mb-8 text-center">
               Upcoming Events
             </h2>
+            
+            {/* Dynamic Events from Database */}
+            {!loading && schoolEvents.length > 0 && (
+              <div className="space-y-8 mb-12">
+                <h3 className="text-2xl font-semibold text-primary-600 mb-6">School Events</h3>
+                {schoolEvents
+                  .filter(event => event.status === 'upcoming')
+                  .map((event) => (
+                    <div key={event.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
+                      <div className="p-6">
+                        <h4 className="text-2xl font-semibold text-primary-600 mb-2">
+                          {event.title}
+                        </h4>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                          <div className="flex items-center text-gray-600">
+                            <Calendar size={16} className="mr-2" />
+                            <span>{new Date(event.date).toLocaleDateString()}</span>
+                          </div>
+                          <div className="flex items-center text-gray-600">
+                            <Clock size={16} className="mr-2" />
+                            <span>{event.time}</span>
+                          </div>
+                          <div className="flex items-center text-gray-600">
+                            <MapPin size={16} className="mr-2" />
+                            <span>{event.location}</span>
+                          </div>
+                          <div className="flex items-center text-gray-600">
+                            <Users size={16} className="mr-2" />
+                            <span>{event.targetAudience}</span>
+                          </div>
+                        </div>
+                        <p className="text-gray-600 mb-4">{event.description}</p>
+                        <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${
+                          event.category === 'academic' ? 'bg-blue-100 text-blue-800' :
+                          event.category === 'sports' ? 'bg-green-100 text-green-800' :
+                          event.category === 'cultural' ? 'bg-purple-100 text-purple-800' :
+                          'bg-orange-100 text-orange-800'
+                        }`}>
+                          {event.category}
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+              </div>
+            )}
+
             <div className="space-y-8">
               {upcomingEvents.map((event, index) => (
                 <motion.div
